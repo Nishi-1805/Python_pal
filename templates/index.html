@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Python Tutor</title>
+</head>
+<body>
+    <header>
+        <div id="appDescription">
+            <h1>Welcome to Your AI-Powered Python Tutor!</h1>
+            <p>This application is designed to help children learn the basics of Python coding in a fun and engaging way. With customizable AI tutor characters, interactive homework assignments, and progress tracking, children can enjoy a personalized learning experience that adapts to their interests and pace.</p>
+            <p>Our unique features, such as fun facts and visual feedback, make learning Python exciting and enjoyable. Let's embark on this coding adventure together!</p>
+        </div>
+    </header>
+    <main>
+        <div id="characterSelection">
+            <h2>Select Your AI Tutor Character</h2>
+            <button onclick="selectCharacter('cat')">🐱 Cat Tutor</button>
+            <button onclick="selectCharacter('superhero')">🦸‍♂️ Superhero Tutor</button>
+            <button onclick="selectCharacter('robot')">🤖 Robot Tutor</button>
+        </div>
+        <div id="tutorDisplay" style="display: none;">
+            <h2>Your Selected Tutor:</h2>
+            <div id="tutorInfo"></div>
+        </div>
+        <textarea id="codeInput" placeholder="Write your Python code here..."></textarea>
+        <button id="submitCode">Submit Code</button>
+        <div id="response"></div>
+        <div id="apiKeyConfig">
+            <h2>Configure Your API Key</h2>
+            <input type="text" id="apiKeyInput" placeholder="Enter your API Key" />
+            <button id="saveApiKey">Save API Key</button>
+        </div>
+        <textarea id="homeworkInput" placeholder="Write your homework answer here..."></textarea>
+        <button id="submitHomework">Submit Homework</button>
+        <div id="progressTracker">
+            <h2>Your Progress</h2>
+            <ul id="progressList"></ul>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
