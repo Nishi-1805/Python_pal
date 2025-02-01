@@ -7,8 +7,8 @@ load_dotenv()
 
 # Initialize the OpenAI client
 client = OpenAI(
-   organization='org-Cf9B2oR0PoVta9200i7fuulB',  
-    project='proj_pkJZZ5hQOcufPa3JPMQQptD3'  
+   organization='org-V3oLOs8VdmdfRokHC9eY49JN',  
+    project='proj_iLjAs9zi6OBpPwGCXrPqMysi'  
 )
 
 app = Flask(__name__)

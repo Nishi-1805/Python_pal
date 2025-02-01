@@ -30,7 +30,7 @@ button:hover {
 }
 
 .feedback {
-    color: #d9534f; 
+    color: #d9534f;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -49,4 +49,4 @@ button:hover {
 
 .tutorCharacter {
     animation: bounce 1 s infinite;
-} 
+}

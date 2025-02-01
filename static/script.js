@@ -107,12 +107,15 @@ function showFunFact() {
 }
 
 document.getElementById('saveApiKey').addEventListener('click', () => {
-    const apiKey = document.getElementById('apiKeyInput').value;
+    const apiKeyInput = document.getElementById('apiKeyInput');
+    const apiKey = apiKeyInput.value;
+
     if (apiKey.trim() === "") {
         alert('Please fill in the API Key field with valid data.');
     } else {
         localStorage.setItem('apiKey', apiKey);
         alert('API Key saved successfully!');
+        apiKeyInput.value = ""; 
     }
 });
 
